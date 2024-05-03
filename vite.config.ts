@@ -11,6 +11,9 @@ const manifest = defineManifest({
     48: "img/icon48.png",
     128: "img/icon128.png",
   },
+  action: {
+    default_popup: "src/popup/index.html",
+  },
 });
 
 export default defineConfig({
