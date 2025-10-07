@@ -7,11 +7,12 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "prettier -w src/",
+    "format": "biome check --write .",
     "tsc": "tsc --skipLibCheck --noEmit",
     "postinstall": "bunx lefthook install"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
     "@crxjs/vite-plugin": "^2.2.0",
     "@types/chrome": "^0.1.22",
     "lefthook": "^1.13.6",
