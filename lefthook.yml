@@ -40,3 +40,10 @@
 #
 #     - script: "hello.go"
 #       runner: go run
+pre-commit:
+  jobs:
+    - name: typecheck
+      run: bun run tsc
+
+    - name: format
+      run: bun run format
